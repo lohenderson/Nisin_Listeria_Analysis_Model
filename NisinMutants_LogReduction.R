@@ -3,7 +3,7 @@ library(agricolae)
 library(emmeans)
 library(lmerTest)
 
-nm <- read.csv("~/Desktop/NisinMutants_LogReduction.csv")
+nm <- read.csv("NisinMutants_LogReduction.csv")
 nm$pH <- as.factor(nm$pH)
 nm_summary <- nm %>%
   group_by(Strain, pH) %>%
