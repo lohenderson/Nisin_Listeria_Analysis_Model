@@ -15,7 +15,7 @@ Response: log of the number (log_count) of *L. monocytogenes*
 
 Random effects: 
 - replicates (rep)
-- plate nested within milk batch
+- plate nested within cheese make and milk batch
 
 Fixed effects:
 - temperature or pH
@@ -24,6 +24,24 @@ Fixed effects:
 - strain
 - age of the milk (milk_age)
 - log of the aerobic plate counts (bacterial counts in the milk before cheese was made; milk_apc)
+- inoculum (log cfu/g of *L. monocytogenes* inoculated on each cheese)
+
+We also included interactions between the following fixed effects:
+- nisin and temperature or pH
+- nisin and strain
+- nisin and day
+
+A one-way ANOVA was calculated for the effect of pH on nisin extracted from the whey.
+
+Raw data: SoftAgarDiffusion.csv
+
+Code: SoftAgarDiffusion.R
+
+A two-way ANOVA was calculated for the effect of strain and pH of *L. monocytogenes* log reduction for experiments using the mutant strains. Post-hoc analysis was performed using Tukey's HSD.
+
+Raw data: NisinMutants_LogReduction.csv
+
+Code: NisinMutants_LogReduction.R
 
 ## How to Cite
 Henderson, L.O., B. Erazo Flores, L.A., Skeens, J., Kent, D., Murphy, S., Wiedmann, M., and Guariglia-Oropeza, V. 2019.Nevertheless, she resisted – role of the environment on *Listeria monocytogenes* sensitivity to nisin treatment in a laboratory cheese model *Submitted*
