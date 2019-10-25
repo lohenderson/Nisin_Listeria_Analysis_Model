@@ -1,7 +1,7 @@
 library(dplyr)
 library(agricolae)
 
-sad <- read.csv("~/Desktop/Nisin_FollowUp/SoftAgarDiffusion2.csv")
+sad <- read.csv("SoftAgarDiffusion.csv")
 #sad$pH <- as.factor(sad$pH)
 sad_summary <- sad %>%
   group_by(pH) %>%
